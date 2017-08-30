@@ -1,0 +1,12 @@
+<div>
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+        <div class="form-group">
+            <input type="text" class="form-control" [value]="iframeWidth" aria-describedby="receive-text" placeholder="Receive Message">
+            <input type="text" class="form-control" [value]="iframeHeight" aria-describedby="receive-text" placeholder="Receive Message">
+        </div>
+    </form>
+</div>
+<div>
+    {{message}}
+    <iframe src="" width="{{iframeWidth}}" height="100%"  frameborder="0"></iframe>
+</div>
